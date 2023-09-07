@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+
+* {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    font-family: 'Teko', sans-serif;
+}
+
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.left-div {
+    position: relative;
+    padding-left: 2vw;
+    left: -2vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sk-minus {
+    transform: skew(-40deg);
+}
+
+.sk-plus {
+    transform: skew(40deg);
+}
+
+.border-broad-design {
+    height: 100%;
+    width: 1.5vw;
+}
+
+
+.main-content-wrapper {
+    display: flex;
+}
+
+.main-content-wrapper h1 {
+    text-align: center;
+    font-size: 5vw;
+}
+
+.reciprocer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 2vw;
+}
+
+.border-up-down {
+    height: 1.5vw;
+    background-color: var(--right-border-out-dark);
+}
+
+.mar-left-right {
+    width: 1.5vw;
+}
+
+.main-content {
+    width: 94vw;
+    background-color: var(--right-body-inner);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Category / Name-Id / Type Block  */
+.category {
+    width: 23vw;
+    height: 3vw;
+    background-color: var(--cat-type-inner);
+}
+
+.category-text {
+    text-align: center;
+    width: 22vw;
+    font-size: 2vw;
+    color: white;
+}
+
+.nameid-hexagon {
+    background-color: rgb(255, 255, 255);
+    height: 2vw;
+    width: 3.5vw;
+}
+
+.pokeid-name {
+    height: 3.8vw;
+    width: 21vw;
+    transform: translateY(-4.75vw);
+    font-size: 3vw;
+    color: white;
+    left: -2vw;
+    text-align: center;
+}
+
+
+.pokeid-num {
+    z-index: 5;
+    color: #000000;
+    height: 4vw;
+    width: 5.2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transform: translate(22.25vw, -12.6vw);
+}
+
+.pokename-bg-upper-name {
+    width: 28vw;
+    height: 0.8vw;
+    background-color: #333333;
+}
+
+.pokename-bg-name {
+    width: 30.6vw;
+    height: 2vw;
+    background-color: #3c3c3c;
+}
+
+.pokemon-type {
+    width: 26vw;
+    height: 4vw;
+    background-color: var(--cat-type-inner);
+}
+
+.pokemon-type-text {
+    color: white;
+    width: 25vw;
+    height: 4vw;
+    display: flex;
+    padding-left: 0.5vw;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5vw;
+}
+
+/* Type Icon */
+
+.type {
+    border: 2px solid whitesmoke;
+    display: inline-block;
+    width: 8vw;
+    height: 3vw;
+    overflow: hidden;
+    ;
+}
+
+.type-back {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.type-name {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: transparent;
+    transform: translateY(-2.8vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: white;
+}
+
+svg {
+    width: 2vw;
+    height: 1.5vw;
+    margin-right: 1.5px;
+}
+
+/* Category / Name-Id / Type Block  End*/
+
+
+/* Ability ---- Weight */
+
+.ability {
+    height: 2vw;
+    width: 23.5vw;
+    font-size: 1.5vw;
+    background-color: var(--ability-inner);
+    margin-top: 0.5vw;
+}
+
+.hid-ability {
+    height: 2vw;
+    font-size: 1.5vw;
+    width: 21.85vw;
+    background-color: var(--hid-ability-inner);
+}
+
+.height {
+    height: 2vw;
+    width: 20vw;
+    background-color: var(--height-inner);
+    margin-top: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.weight {
+    height: 2vw;
+    width: 18.32vw;
+    background-color: var(--weight-inner);
+    font-size: 1.5vw;
+}
+
+.egg {
+    height: 2vw;
+    width: 20vw;
+    background-color: var(--egg-inner);
+    font-size: 1.5vw;
+}
+
+.gender {
+    height: 2vw;
+    width: 18.32vw;
+    background-color: var(--gender-inner);
+    font-size: 1.5vw;
+    margin-top: 0.5vw;
+}
+
+/* Ability ---- Weight End*/
+
+/* Base stats */
+
+.base-stat-top {
+    height: 2vw;
+    width: 22vw;
+    background-color: var(--base-stats-main-inner);
+    margin-top: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.base-stat-mid-top {
+    height: 6vw;
+    width: 25.35vw;
+    background-color: var(--base-stats-second-inner);
+}
+
+.base-stat-mid-bot {
+    height: 6vw;
+    width: 25.35vw;
+    background-color: var(--base-stats-second-inner);
+}
+
+.base-stat-bot {
+    height: 2vw;
+    width: 22vw;
+    top: -12vw;
+    font-size: 1.5vw;
+    background-color: var(--base-stats-main-inner);
+}
+
+.statstext {
+    height: 12vw;
+    transform: translateY(-12vw);
+    font-size: 0.6vw;
+    margin-left: 1vw;
+}
+
+.statstext h1 strong span {
+    display: inline-block;
+    width: 6vw;
+}
+
+.status-bar {
+    display: inline-block;
+    width: 10vw;
+    border-radius: 0.5vw;
+    height: 0.3vw;
+    background-color: #4a4747;
+    position: relative;
+    transform: translateY(-0.25vw);
+}
+
+.status-bar-rel {
+    position: absolute;
+    display: inline-block;
+    border-radius: 0.5vw;
+    height: 100%;
+    background-color: var(--cat-type-inner);
+}
+
+/* Base stats End */
+
+/* Right div */
+
+.right-div-whole {
+    position: absolute;
+    right: -3vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.right-border {
+    height: 1.5vw;
+    width: 21.03vw;
+    background-color: var(--right-border-top-bott);
+    padding-right: 3vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.right-mid {
+    height: 8vw;
+    width: 25vw;
+    background-color: var(--right-body-inner);
+    padding-right: 3vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.right-top-det span {
+    margin-left: 2vw;
+    display: block;
+    height: 2vw;
+    width: 100%;
+}
+
+.right-top-det {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 21vw;
+    height: 15vw;
+    position: absolute;
+    padding-bottom: 0.5vw;
+    transform: translate(79vw, -39vw);
+    font-size: 2vw;
+}
+
+.icon-info {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    transform: translate(75.5vw, -51.5vw);
+}
+
+.img-shiny {
+    transform: translate(80vw, -21.5vw);
+    height: 16vw;
+    width: 20vw;
+}
+
+.box-legend {
+    width: 48%;
+    height: 2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 2vw;
+}
+
+.box-myth {
+    width: 48%;
+    height: 2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 2vw;
+}
+
+.box-gendiff {
+    width: 48%;
+    height: 2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 2vw;
+}
+
+.box-formswitch {
+    width: 48%;
+    height: 2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 2vw;
+}
+
+.box-megaevo {
+    width: 48%;
+    height: 2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 2vw;
+}
+
+.box-gmax {
+    width: 48%;
+    height: 2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 2vw;
+}
+
+/* Right div Ends */
+
+/* Pokemon Image */
+
+.poke-image {
+    position: absolute;
+    height: 41vw;
+    width: 41vw;
+    top: 5.5vw;
+    left: 31vw;
+    background-image: url('../../svg/Pokeball-Background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.poke-image-main {
+    height: 100%;
+    width: 100%;
+}
+
+/* Pokemon Image End*/
+
+
+/* Pokemon Mini Box */
+.pok-descp {
+    padding: 1vw;
+    font-size: 3vw;
+}
+
+.box-poke {
+    height: 27vw;
+    overflow: hidden;
+    margin-bottom: 1vw;
+    background-color: var(--right-border-out-light);
+    border: 0.5vw solid var(--right-border-out-dark);
+}
+
+.box-poke-img {
+    width: 22vw;
+    height: 20vw;
+}
+
+.box-poke-imgs {
+    display: flex;
+    z-index: 1;
+    justify-content: space-evenly;
+    transform: translateY(-1vw);
+}
+
+.Shiny-star {
+    width: 2vw;
+    position: relative;
+    z-index: 5;
+    display: block;
+    transform: translateX(33vw);
+
+}
+
+.box-poke-name {
+    font-size: 2.5vw;
+    text-align: center;
+    transform: translateY(-2.5vw);
+}
+
+.box-poke-evo {
+    height: 35vw;
+    overflow: hidden;
+    margin-bottom: 1vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--right-border-out-light);
+    border: 0.5vw solid var(--right-border-out-dark);
+}
+
+.box-poke-name-evo {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.box-poke-det {
+    font-size: 2.5vw;
+    width: 100%;
+    padding-left: 2vw;
+    transform: translateY(-0.5vw);
+}
+
+.box-move {
+    font-size: 2.5vw;
+    height: 3vw;
+    padding: 0vw 1vw;
+    margin: 0vw 0.25vw 1vw 0.25vw;
+    border-radius: 1vw;
+    background-color: var(--right-border-top-bott);
+}
+
+.box-poke-type {
+    transform: translateY(-2.5vw);
+    height: 3vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-type {
+    height: 3vw;
+    display: inline-flex;
+    width: 10vw;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.container-type p {
+    font-size: 2.5vw;
+    width: 7vw;
+    text-align: center;
+}
+
+.icon-type-svg {
+    width: 3vw;
+    height: 3vw;
+}
+
+/* Pokemon Mini Box */
+
+/**/
+
+.pokemon-type-text .container-type {
+    transform: skew(-40deg);
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.pokemon-type-text .container-type p {
+    transform: skew(40deg);
+    font-size: 2vw;
+}
+
+.pokemon-type-text .container-type img {
+    transform: skew(40deg);
+    width: 2vw;
+    margin-left: 0.2vw;
+}
+
+/**/
