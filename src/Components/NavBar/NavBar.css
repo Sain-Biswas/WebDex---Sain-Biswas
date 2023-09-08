@@ -50,3 +50,7 @@ a {
     padding: 0.5vw 2vw;
     margin-left: 25vw;
 }
+
+.linkActive {
+    color: darkred;
+}

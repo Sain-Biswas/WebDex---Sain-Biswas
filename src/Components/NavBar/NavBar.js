@@ -1,6 +1,6 @@
 import React from 'react'
 import './NavBar.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import searchIcon from '../../svg/icon_search.svg'
 import navbarLogo from '../../svg/logo_navbar.svg'
 import { useRef } from 'react'
@@ -14,13 +14,19 @@ function NavBar() {
         <img id="Nav-logo" src={navbarLogo} alt="WeBDèX" />
         <ul className="nav-routes">
           <li className="nav-routes">
-            <Link to="/">Home</Link>
+            <NavLink to="/" className={({ isActive }) => isActive ? "linkActive" : ""}>
+              Home
+            </NavLink>
           </li>
           <li className="nav-routes">
-            <Link to="/types">Types</Link>
+            <NavLink to="/types" className={({ isActive }) => isActive ? "linkActive" : ""}>
+              Types
+            </NavLink>
           </li>
           <li className="nav-routes">
-            <Link to="/about">About us</Link>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "linkActive" : ""}>
+              About us
+            </NavLink>
           </li>
         </ul>
         <input
