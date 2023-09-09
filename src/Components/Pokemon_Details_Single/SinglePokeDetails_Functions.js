@@ -1,6 +1,8 @@
+import axios from "axios";
+
 const PKMNfetch = async (pokeid) => {
-    const PKMNspecies = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeid}`).then((res) => res.json())
-    const PKMNdata = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeid}`).then((res) => res.json())
+    const PKMNspecies = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${pokeid}`).then((res) => res.data)
+    const PKMNdata = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokeid}`).then((res) => res.data)
     return await PKMNfetchProcessor(PKMNdata, PKMNspecies);
 }
 
@@ -126,7 +128,7 @@ const PKMNfetchProcessor = async (PKMNdata, PKMNspecies) => {
 }
 
 const EvolutionChain = async (url) => {
-    const data = await fetch(url).then((res) => res.json())
+    const data = await axios.get(url).then((res) => res.data)
 
     let evolutionChain = []
     evolutionChain = await evolutionChainProcessor(evolutionChain, data.chain)
