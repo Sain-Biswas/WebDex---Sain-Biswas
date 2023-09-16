@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Resources
 https://www.deviantart.com/nyjee
+https://www.deviantart.com/jormxdos

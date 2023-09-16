@@ -47,6 +47,25 @@ export const moveFetcher = async (id) => {
             }
         })
 
+        let metaCategory = ""
+        data.meta.category.name.split('+').map((element) => {
+            metaCategory += element.charAt(0).toUpperCase() + element.slice(1) + " "
+        })
+        let metaData = {
+            ailmentName: data.meta.ailment.name.charAt(0).toUpperCase() + data.meta.ailment.name.slice(1),
+            categoryName: metaCategory,
+            ailmentChance: data.meta.ailment_chance,
+            critRate: data.meta.crit_rate,
+            drain: data.meta.drain,
+            flinchChance: data.meta.flinch_chance,
+            healing: data.meta.healing,
+            maxTurns: data.meta.max_turns,
+            maxHits: data.meta.max_hits,
+            minTurns: data.meta.min_turns,
+            minHits: data.meta.min_hits,
+            statChance: data.meta.stat_chance
+        }
+
 
 
 
@@ -76,9 +95,9 @@ export const moveFetcher = async (id) => {
             pp: data.pp,
             effectChanges: effectChanges,
             targetName: target.trim(),
-            effectEntries: effectEntries
+            effectEntries: effectEntries,
+            metaData: metaData
         }
-
         return move
     }
     catch (error) {
